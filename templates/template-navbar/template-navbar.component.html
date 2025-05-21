@@ -1,0 +1,11 @@
+<!-- [AI]: Responsive top navigation bar with optional action icons -->
+<nav class="template-navbar">
+  <div class="navbar-title">{{ title }}</div>
+  <div class="navbar-actions">
+    <ng-container *ngFor="let action of actions">
+      <button class="icon-button" (click)="action.callback()" [title]="action.tooltip || ''">
+        <i [class]="action.icon"></i>
+      </button>
+    </ng-container>
+  </div>
+</nav>

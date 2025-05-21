@@ -1,0 +1,7 @@
+<!-- [AI]: Toggleable dropdown menu with action items -->
+<div class="dropdown">
+  <button (click)="toggle()">{{ label }} ▼</button>
+  <ul *ngIf="open" class="dropdown-menu">
+    <li *ngFor="let opt of options" (click)="opt.action()">{{ opt.text }}</li>
+  </ul>
+</div>

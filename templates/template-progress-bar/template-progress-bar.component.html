@@ -1,0 +1,4 @@
+<div class="template-progress-bar">
+  <div class="progress-bar-fill" [style.width.%]="(value / max) * 100" [style.backgroundColor]="color"></div>
+  <div class="progress-label" *ngIf="label">{{ label }} ({{ value }}/{{ max }})</div>
+</div>

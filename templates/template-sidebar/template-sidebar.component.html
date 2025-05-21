@@ -1,0 +1,11 @@
+<!-- [AI]: Vertical navigation sidebar with dynamic links -->
+<nav class="template-sidebar">
+  <ul>
+    <li *ngFor="let link of links" routerLinkActive="active">
+      <a [routerLink]="link.route">
+        <i *ngIf="link.icon" [class]="link.icon"></i>
+        {{ link.label }}
+      </a>
+    </li>
+  </ul>
+</nav>

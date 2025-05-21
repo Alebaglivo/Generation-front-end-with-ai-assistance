@@ -1,0 +1,4 @@
+<div *ngIf="visible" class="template-alert" [ngClass]="type">
+  <span>{{ message }}</span>
+  <button *ngIf="dismissible" (click)="dismiss()">×</button>
+</div>

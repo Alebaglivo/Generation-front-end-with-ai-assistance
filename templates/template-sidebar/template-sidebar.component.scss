@@ -1,0 +1,26 @@
+.template-sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  height: 100vh;
+  padding: 1rem;
+  box-shadow: 2px 0 4px rgba(0,0,0,0.05);
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  margin-bottom: 1rem;
+}
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+a.active {
+  color: #007bff;
+}

@@ -1,0 +1,6 @@
+<div class="template-calendar">
+  <h3>{{ today | date: 'MMMM y' }}</h3>
+  <div class="calendar-grid">
+    <div class="day" *ngFor="let day of daysInMonth">{{ day }}</div>
+  </div>
+</div>

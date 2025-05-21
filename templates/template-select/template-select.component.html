@@ -1,0 +1,7 @@
+<div class="template-select">
+  <label>{{ label }}
+    <select [(ngModel)]="selected">
+      <option *ngFor="let opt of options" [value]="opt">{{ opt }}</option>
+    </select>
+  </label>
+</div>

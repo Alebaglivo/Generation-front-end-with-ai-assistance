@@ -1,0 +1,23 @@
+.template-stepper {
+  text-align: center;
+}
+.steps {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.steps li {
+  flex: 1;
+  text-align: center;
+  padding: 0.5rem;
+  border-bottom: 2px solid #ccc;
+}
+.steps li.active {
+  font-weight: bold;
+  border-color: #007bff;
+}
+.step-controls button {
+  margin: 0 0.5rem;
+}

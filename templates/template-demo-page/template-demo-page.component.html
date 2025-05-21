@@ -1,0 +1,10 @@
+<div class="demo-layout">
+  <app-template-navbar [title]="'Demo App'" [actions]="navbarActions"></app-template-navbar>
+  <div class="demo-body">
+    <app-template-sidebar [links]="sidebarLinks"></app-template-sidebar>
+    <main class="demo-main">
+      <app-template-card [title]="'User Profile'" [fields]="cardFields"></app-template-card>
+      <app-template-accordion [sections]="accordionSections"></app-template-accordion>
+    </main>
+  </div>
+</div>

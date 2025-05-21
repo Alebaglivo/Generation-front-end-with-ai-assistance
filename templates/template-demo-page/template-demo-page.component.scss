@@ -1,0 +1,14 @@
+.demo-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.demo-body {
+  display: flex;
+  flex: 1;
+}
+.demo-main {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}

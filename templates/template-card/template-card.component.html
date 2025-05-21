@@ -1,0 +1,21 @@
+<!-- [IA]: This component displays dynamic information from backend -->
+<!-- [IA]: Comments mark where to inject dynamic data -->
+
+<div class="template-card">
+  <h2>{{ title }}</h2> <!-- [IA]: Main title, injected from backend metadata -->
+
+  <div class="card-content">
+    <!-- [IA]: Inject dynamic field list here -->
+    <div *ngFor="let field of fields">
+      <strong>{{ field.label }}:</strong>
+      <span>{{ field.value }}</span>
+    </div>
+  </div>
+
+  <!-- [IA]: You may add footer or actions here -->
+  <div class="card-actions" *ngIf="actions?.length">
+    <button *ngFor="let action of actions" (click)="action.callback()">
+      {{ action.label }}
+    </button>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<div class="template-checkbox-list">
+  <label *ngFor="let opt of options">
+    <input type="checkbox" [(ngModel)]="opt.checked" />
+    {{ opt.label }}
+  </label>
+</div>

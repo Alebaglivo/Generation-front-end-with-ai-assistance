@@ -1,0 +1,10 @@
+.template-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+th, td {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}

@@ -1,0 +1,12 @@
+<!-- [IA]: Dynamically generated form based on backend field definitions -->
+<form [formGroup]="formGroup" (ngSubmit)="submit()" class="template-form">
+  <h2>{{ formTitle }}</h2>
+
+  <div *ngFor="let field of fields" class="form-field">
+    <label [for]="field.name">{{ field.label }}</label>
+    <!-- [IA]: Generate input based on type -->
+    <input [type]="field.type" [formControlName]="field.name" [id]="field.name" />
+  </div>
+
+  <button type="submit">Submit</button>
+</form>

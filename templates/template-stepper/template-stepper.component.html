@@ -1,0 +1,9 @@
+<div class="template-stepper">
+  <ul class="steps">
+    <li *ngFor="let step of steps; let i = index" [class.active]="i === activeStep">{{ step }}</li>
+  </ul>
+  <div class="step-controls">
+    <button (click)="previous()" [disabled]="activeStep === 0">Back</button>
+    <button (click)="next()" [disabled]="activeStep === steps.length - 1">Next</button>
+  </div>
+</div>
